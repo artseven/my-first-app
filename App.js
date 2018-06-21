@@ -35,17 +35,18 @@ export default class App extends React.Component {
       <View style={styles.container}>
         <View style={styles.inputContainer}>
           <TextInput
-          placeholder="An awesome place" 
-          value={this.state.placeName}
-          onChangeText={this.placeNameChangedHandler}
-          style={styles.placeInput}
+           placeholder="An awesome place" 
+           value={this.state.placeName}
+           onChangeText={this.placeNameChangedHandler}
+           style={styles.placeInput}
           />
           <Button 
            title="Add"
            style={styles.placeButton}
-           onPress={this.placeSubmitHandler} />
+           onPress={this.placeSubmitHandler}
+          />
         </View>
-        <View>
+        <View style={styles.listContainer}>
           {placesOutput}
         </View>
       </View>
@@ -74,5 +75,8 @@ const styles = StyleSheet.create({
   placeButton: {
     width: "30%"
 
-  }
+  },
+  listContainer: {
+    width: "100%"
+  },
 });
