@@ -25,6 +25,7 @@ export default class App extends React.Component {
         places: prevState.places.concat(prevState.placeName)
       }
     })
+    console.log('blah')
   }
 
   render() {
