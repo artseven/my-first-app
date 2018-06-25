@@ -1,6 +1,17 @@
 import React, { Component } from 'react';
 import { View, TextInput, Button, StyleSheet } from 'react-native';
 class PlaceInput extends Component {
+
+    state = {
+        placeName: '',
+      }
+    
+    placeNameChangedHandler = val => {
+        this.setState({
+            placeName: val
+        })
+    }
+
     render() {
         <View style={styles.inputContainer}>
           <TextInput
@@ -12,7 +23,7 @@ class PlaceInput extends Component {
           <Button 
            title="Add"
            style={styles.placeButton}
-           onPress={this.placeSubmitHandler}
+           onPress={this.onPlaceAdded}
           />
         </View>
     }
