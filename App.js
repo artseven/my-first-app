@@ -34,19 +34,7 @@ export default class App extends React.Component {
     ));
     return (
       <View style={styles.container}>
-        <View style={styles.inputContainer}>
-          <TextInput
-           placeholder="An awesome place" 
-           value={this.state.placeName}
-           onChangeText={this.placeNameChangedHandler}
-           style={styles.placeInput}
-          />
-          <Button 
-           title="Add"
-           style={styles.placeButton}
-           onPress={this.placeSubmitHandler}
-          />
-        </View>
+        
         <View style={styles.listContainer}>
           {placesOutput}
         </View>
@@ -62,20 +50,6 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'flex-start',
-  },
-  inputContainer: {
-    // flex: 1,
-    width: "100%",
-    flexDirection: "row",
-    justifyContent: "space-between",
-    alignItems: "center"
-  },
-  placeInput: {
-    width: "70%"
-  },
-  placeButton: {
-    width: "30%"
-
   },
   listContainer: {
     width: "100%"
