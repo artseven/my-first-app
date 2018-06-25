@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import { View, TextInput, Button, StyleSheet } from 'react-native';
 class PlaceInput extends Component {
     render() {
         <View style={styles.inputContainer}>
@@ -19,7 +19,7 @@ class PlaceInput extends Component {
 }
 
 
-const style = StyleSheet.apply({
+const styles = StyleSheet.apply({
     inputContainer: {
     // flex: 1,
     width: "100%",
