@@ -23,7 +23,7 @@ class PlaceInput extends Component {
           <Button 
            title="Add"
            style={styles.placeButton}
-           onPress={() => this.onPlaceAdded{this.state.placeName}}
+           onPress={() => this.onPlaceAdded(this.state.placeName)}
           />
         </View>
     }
